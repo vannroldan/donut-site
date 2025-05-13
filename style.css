@@ -1,0 +1,222 @@
+/* === Base & Body === */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Playwrite RO', sans-serif;
+  background-color: #fff0f5;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  color: #5a3e36;
+  text-align: center;
+  font-size: 16px; /* Base size */
+  line-height: 1.6;
+}
+
+/* === Typography Standards === */
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+p, label, li, a, input, textarea, button {
+  font-size: 1rem;
+}
+
+.navbar li a,
+.navbar .brand {
+  font-size: 1.1rem;
+}
+
+/* === Navbar === */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ff69b4;
+  padding: 1rem 2rem;
+  flex-wrap: wrap;
+}
+
+.navbar > .nav-left,
+.navbar > .nav-center,
+.navbar > .nav-right {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex: 1;
+}
+
+.nav-left   { justify-content: flex-start; }
+.nav-center { justify-content: center;  }
+.nav-right  { justify-content: flex-end;  }
+
+.navbar li {
+  list-style: none;
+  padding: 0.4rem 0.8rem;
+  border-radius: 20px;
+  transition: background 0.3s ease;
+}
+
+.navbar li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.navbar li:hover {
+  background-color: #ff85c1;
+}
+
+.navbar .brand {
+  font-weight: 700;
+  color: white;
+  text-transform: uppercase;
+}
+
+/* === Hero Content === */
+.heading {
+  margin-top: 2rem;
+  font-size: 2.5rem;
+}
+
+.description {
+  margin: 1rem auto;
+  max-width: 600px;
+  font-size: 1.125rem;
+}
+
+/* === Hero Image === */
+.hero-img {
+  display: block;
+  width: 300px;
+  max-width: 80%;
+  margin: 2rem auto 1rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  object-fit: cover;
+}
+
+/* === Buttons === */
+.button-group,
+.top-btn {
+  margin: 1rem auto;
+}
+
+.btn-now {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background-color: #ff69b4;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  font-size: 1rem;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.btn-now:hover {
+  background-color: #f0b1d0;
+}
+
+.top-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+/* === Reviews === */
+.reviews {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 1rem;
+}
+
+.review-box {
+  background-color: #fff8f0;
+  border: 2px solid #ffcc99;
+  border-radius: 12px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+}
+
+.rating {
+  color: #ff9933;
+  font-size: 1.2rem;
+  margin-top: 0.5rem;
+}
+
+/* === Delivery Form === */
+.delivery-form {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  background-color: #fff8f0;
+  border: 2px solid #ffcc99;
+  border-radius: 12px;
+  box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+}
+
+.delivery-form h2 {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.delivery-form label {
+  display: block;
+  margin: 0.75rem 0 0.25rem;
+  font-weight: bold;
+}
+
+.delivery-form input,
+.delivery-form textarea {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-family: inherit;
+}
+
+.delivery-form button {
+  margin-top: 1rem;
+  width: 100%;
+  padding: 0.75rem;
+  background-color: #ff9933;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.delivery-form button:hover {
+  background-color: #e67e22;
+}
+
+/* === Responsive === */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .navbar > .nav-left,
+  .navbar > .nav-right {
+    justify-content: center;
+    margin: 0.5rem 0;
+  }
+
+  .nav-center {
+    order: -1;
+    margin-bottom: 1rem;
+  }
+}

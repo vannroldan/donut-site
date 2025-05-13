@@ -1,31 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="style.css" />
-  <title>Doughnut Stop Believin</title>
-
-  
-<link rel="icon" href="favicon.png" type="image/png">
-<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-
-
-  
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <title>Customer Info - Doughnut Stop Believin</title>
   <link href="https://fonts.googleapis.com/css2?family=Playwrite+RO:wght@100..400&display=swap" rel="stylesheet" />
 
-  <script>
-    function handleOrderClick() {
-      window.location.href = 'order.html';
-    }
-  </script>
 </head>
 
+
 <body>
+  
   <nav class="navbar">
     <div class="nav-left">
       <li><a href="about.html">ABOUT PAGE</a></li>
@@ -34,7 +21,7 @@
     </div>
 
     <div class="nav-center">
-      <li class="brand"><a href="index.html">Doughnut Stop Believin</a></li> 
+      <li class="brand"><a href="index.html">Doughnut Stop Believin</a></li>
     </div>
 
     <div class="nav-right">
@@ -44,22 +31,29 @@
     </div>
   </nav>
 
-  <h1 class="heading">Doughnut Stop Believin</h1>
-
-  <p class="description">
-    Welcome to our shop! We have a variety of sweet and delicious donuts.<br />
-    You can choose different flavors from the menu or at the cashier.
-  </p>
-
-  <img src="favicon.png" alt="Donut Logo" class="hero-img" />
-
-  <div class="button-group">
-    <button class="btn-now" onclick="handleOrderClick()">Order Now</button>
-  </div>
-
+  <h1 class="heading">Customer Information</h1>
+  <p class="description">Here, you can find details about our customers and how we ensure they have a delightful experience!</p>
+  <section class="delivery-form">
+    <h2>Request a Delivery</h2>
+    <form action="#" method="post">
+      <label for="name">Full Name:</label>
+      <input type="text" id="name" name="name" required />
+  
+      <label for="address">Delivery Address:</label>
+      <input type="text" id="address" name="address" required />
+  
+      <label for="phone">Phone Number:</label>
+      <input type="tel" id="phone" name="phone" required />
+  
+      <label for="time">Date of Birth</label>
+      <input type="time" id="time" name="time" />
+  
+      <button type="submit">Submit Order</button>
+    </form>
+  </section>
+  
   <footer>
     <p>&copy; 2025 Doughnut Stop Believin. All rights reserved.</p>
   </footer>
 </body>
 </html>
-123

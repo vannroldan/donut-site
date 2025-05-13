@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Contact - Doughnut Stop Believin</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playwrite+RO:wght@100..400&display=swap" rel="stylesheet" />
+  <script>
+    function handleSubmitOrder() {
+      alert("Your order has been placed! 🍩");
+      window.location.href = 'index.html';
+    }
+  </script>
+</head>
+<link rel="icon" href="favicon.png" type="image/png">
+
+
+<body>
+ 
+  <nav class="navbar">
+    <div class="nav-left">
+      <li><a href="about.html">ABOUT PAGE</a></li>
+      <li><a href="customer-info.html">CUSTOMER INFO</a></li>
+      <li><a href="contact.html">CONTACT</a></li>
+    </div>
+
+    <div class="nav-center">
+      <li class="brand">Doughnut Stop Believin</li>
+    </div>
+
+    <div class="nav-right">
+      <li><a href="review.html">REVIEW PAGE</a></li>
+      <li><a href="delivery.html">DELIVERY</a></li>
+      <li><a href="pickup.html">PICK UP</a></li>
+    </div>
+  </nav>
+
+
+  <h1 class="heading">Place Your Order</h1>
+
+  <p class="description">
+    Choose your favorite doughnut flavors from the list below and place your order!
+  </p>
+
+  <form id="orderForm" onsubmit="handleSubmitOrder(); return false;">
+    <div class="form-group">
+      <label for="flavor">Select Doughnut Flavor:</label>
+      <select id="flavor" name="flavor">
+        <option value="chocolate">Chocolate</option>
+        <option value="vanilla">Vanilla</option>
+        <option value="strawberry">Strawberry</option>
+        <option value="glazed">Glazed</option>
+        <option value="blueberry">Blueberry</option>
+        <option value="blueberry">Choco Wacko</option>
+        <option value="blueberry">Choco Marble</option>
+        <option value="blueberry">Nutty Vanilla</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="quantity">Quantity:</label>
+      <input type="number" id="quantity" name="quantity" min="1" value="1" />
+    </div>
+
+    <button type="submit" class="btn-now">Submit Order</button>
+  </form>
+
+  <p class="description">Once you place your order, you will be redirected back to the home page!</p>
+
+  <footer>
+    <p>&copy; 2025 Doughnut Stop Believin. All rights reserved.</p>
+  </footer>
+</body>
+</html>
